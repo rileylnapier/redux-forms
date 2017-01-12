@@ -109,7 +109,7 @@ class Field<T> extends Component<Props<T>, void> {
     props._addField(props._form, props.name, newField);
   }
 
-  handleChange(ev: React.SyntheticEvent<Target> | Value) {
+  handleChange(ev: Event | Value) {
     const { _fieldChange, _form, name, normalize, validate, defaultValue } = this.props;
 
     const value = normalize(getValue(ev));
@@ -125,7 +125,7 @@ class Field<T> extends Component<Props<T>, void> {
     _fieldFocus(_form, name);
   }
 
-  handleBlur(ev: React.SyntheticEvent<Target> | Value) {
+  handleBlur(ev: Event | Value) {
     const { _fieldBlur, _form, name, normalize, validate, defaultValue } = this.props;
 
     const value = normalize(getValue(ev));
