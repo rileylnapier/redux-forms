@@ -6,5 +6,5 @@ coverage
 .tmp
 lib
 dist
-bundle.js
+examples/*/bundle.js
 npm-debug.log

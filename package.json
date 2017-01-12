@@ -57,6 +57,8 @@
     "gulp-plumber": "^1.1.0",
     "gulp-typescript": "^3.1.4",
     "gulp-util": "^3.0.8",
+    "inferno": "^1.1.2",
+    "inferno-redux": "^1.1.2",
     "jest": "^18.1.0",
     "lerna": "2.0.0-beta.32",
     "ramda": "^0.23.0",
