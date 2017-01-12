@@ -18,6 +18,8 @@
   },
   "peerDependencies": {
     "inferno": "^1.1.2",
+    "inferno-component": "^1.1.2",
+    "inferno-hyperscript": "^1.1.2",
     "inferno-redux": "^1.1.2",
     "redux": "^3.6.0"
   },

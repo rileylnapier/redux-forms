@@ -8,6 +8,10 @@
     "noImplicitAny": true,
     "strictNullChecks": true
   },
+  "include": [
+    "inferno",
+    "inferno-hyperscript"
+  ],
   "exclude": [
     "examples",
     "node_modules"

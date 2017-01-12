@@ -2341,6 +2341,31 @@ indexof@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/indexof/-/indexof-0.0.1.tgz#82dc336d232b9062179d05ab3293a66059fd435d"
 
+inferno-component@1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/inferno-component/-/inferno-component-1.1.2.tgz#e9ab1661a3e5731f5f40c1dbd96ad21d2083537e"
+  dependencies:
+    inferno "1.1.2"
+
+inferno-create-element@1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/inferno-create-element/-/inferno-create-element-1.1.2.tgz#d7a24cf82813c9581f8d7ffda5cf0ba62e5290fd"
+  dependencies:
+    inferno "1.1.2"
+
+inferno-redux@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/inferno-redux/-/inferno-redux-1.1.2.tgz#c75bf41776487c1226b03ba05e1983058dfec6fe"
+  dependencies:
+    inferno "1.1.2"
+    inferno-component "1.1.2"
+    inferno-create-element "1.1.2"
+    redux "*"
+
+inferno@1.1.2, inferno@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/inferno/-/inferno-1.1.2.tgz#7809927546f8e5eb8163fb61b314df0cf0517f54"
+
 inflight@^1.0.4:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/inflight/-/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
@@ -4098,7 +4123,7 @@ redeyed@~1.0.0:
   dependencies:
     esprima "~3.0.0"
 
-redux@^3.6.0:
+redux@*, redux@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/redux/-/redux-3.6.0.tgz#887c2b3d0b9bd86eca2be70571c27654c19e188d"
   dependencies:
