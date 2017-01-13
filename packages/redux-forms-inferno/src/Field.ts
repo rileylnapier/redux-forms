@@ -16,11 +16,11 @@ export type SuppliedProps = {
   meta: MetaProps,
 };
 
-export type SFComponent = (props: any) => VNode;
+export type SFComponent<T> = (props: T) => any;
 
 export type FieldProps<T> = T & {
   name: string,
-  component: SFComponent | string,  // TODO: Add component class
+  component: SFComponent<T> | string,  // TODO: Add component class
   validate?: Validate,
   normalize?: Normalize,
   defaultValue?: string,
@@ -191,7 +191,8 @@ const bindActions = {
   _fieldBlur: actions.fieldBlur,
 };
 
-const Connected = connect<StateProps, ActionProps, ConnectedProps<{}>>((state, props: ConnectedProps<{}>) => ({
+// TODO
+const Connected = connect<StateProps, ActionProps, ConnectedProps<{}>>((state: any, props: ConnectedProps<{}>) => ({
   _field: R.path<containers.Field>([props._form, 'fields', props.name], state.reduxForms),
 }), bindActions)(Field);
 

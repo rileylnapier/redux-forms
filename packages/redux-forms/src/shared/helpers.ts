@@ -17,7 +17,7 @@ export function isFunction(cand: any): cand is Function {
   return typeof cand === 'function';
 }
 
-export function isEvent(cand: any): cand is React.SyntheticEvent<any> {
+export function isEvent(cand: any): cand is Event {
   return Boolean(
     cand &&
     typeof cand === 'object' &&
